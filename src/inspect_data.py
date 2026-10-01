@@ -76,3 +76,35 @@ print(global_df.head())
 
 print("\n=== COUNTRY SAMPLE ===")
 print(country_df.head())
+
+# ============================================================
+# INVESTIGATE MISSING VALUES
+# ============================================================
+
+print("\n=== GLOBAL ROWS MISSING WEEKLY VIEWS ===")
+print(
+    global_df[global_df["weekly_views"].isna()]
+    [["week", "category", "show_title", "season_title"]]
+    .head(10)
+)
+
+print("\n=== GLOBAL ROWS MISSING RUNTIME ===")
+print(
+    global_df[global_df["runtime"].isna()]
+    [["week", "category", "show_title", "season_title"]]
+    .head(10)
+)
+
+print("\n=== GLOBAL MISSING VIEWS BY CATEGORY ===")
+print(
+    global_df[global_df["weekly_views"].isna()]
+    ["category"]
+    .value_counts()
+)
+
+print("\n=== COUNTRY MISSING SEASON TITLE BY CATEGORY ===")
+print(
+    country_df[country_df["season_title"].isna()]
+    ["category"]
+    .value_counts()
+)
