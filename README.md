@@ -26,15 +26,15 @@ The raw source files are intentionally excluded from this repository because the
 
 Current Progress
 
-Load Netflix Top 10 global data with Python
+~Load Netflix Top 10 global data with Python~
 
-Load Netflix Top 10 country data with Python
+~Load Netflix Top 10 country data with Python~
 
-Profile dataset structure
+~Profile dataset structure~
 
-Check for duplicate records
+~Check for duplicate records~
 
-Check for missing values
+~Check for missing values~
 
 Clean and validate data
 
