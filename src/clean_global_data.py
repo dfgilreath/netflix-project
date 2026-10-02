@@ -28,3 +28,21 @@ global_df["title"] = global_df["season_title"].fillna(global_df["show_title"])
 
 print("\nSample titles:")
 print(global_df[["show_title", "season_title", "title"]].head(10))
+
+# Select columns for the cleaned global dataset.
+global_df = global_df[
+    [
+        "week",
+        "category",
+        "weekly_rank",
+        "title",
+        "weekly_hours_viewed",
+        "weekly_views",
+        "cumulative_weeks_in_top_10",
+    ]
+].copy()
+
+print("\nCleaned columns:")
+print(global_df.columns.tolist())
+
+print(f"Cleaned rows: {len(global_df):,}")
