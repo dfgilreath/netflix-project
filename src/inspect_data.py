@@ -108,3 +108,28 @@ print(
     ["category"]
     .value_counts()
 )
+
+# ============================================================
+# INVESTIGATE MISSING GLOBAL METRICS OVER TIME
+# ============================================================
+
+print("\n=== MISSING VIEWS BY WEEK ===")
+
+missing_views_by_week = (
+    global_df[global_df["weekly_views"].isna()]
+    .groupby("week")
+    .size()
+)
+
+print(missing_views_by_week)
+
+
+print("\n=== MISSING VIEWS BY CATEGORY AND WEEK ===")
+
+missing_views_by_category_week = (
+    global_df[global_df["weekly_views"].isna()]
+    .groupby(["week", "category"])
+    .size()
+)
+
+print(missing_views_by_category_week)
