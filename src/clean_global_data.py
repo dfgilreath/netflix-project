@@ -22,3 +22,9 @@ print(
     f"Filtered date range: "
     f"{global_df['week'].min().date()} to {global_df['week'].max().date()}"
 )
+
+# Create a single title field using season_title when available.
+global_df["title"] = global_df["season_title"].fillna(global_df["show_title"])
+
+print("\nSample titles:")
+print(global_df[["show_title", "season_title", "title"]].head(10))
