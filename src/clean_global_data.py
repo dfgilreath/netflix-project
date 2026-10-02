@@ -53,6 +53,15 @@ print(f"Duplicate rows: {global_df.duplicated().sum():,}")
 
 print("\nMissing values by column:")
 print(global_df.isna().sum())
+print(f"\nRows: {len(global_df):,}")
+print(f"Unique titles: {global_df['title'].nunique():,}")
+print(
+    f"Date range: "
+    f"{global_df['week'].min().date()} to {global_df['week'].max().date()}"
+)
+
+print("\nCategories:")
+print(global_df["category"].value_counts())
 
 # Save cleaned global data
 output_path = "data/processed/global_clean.csv"
