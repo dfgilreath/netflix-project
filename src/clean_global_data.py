@@ -12,3 +12,13 @@ print(f"Raw rows: {len(global_df):,}")
 global_df["week"] = pd.to_datetime(global_df["week"])
 
 print(f"Date range: {global_df['week'].min().date()} to {global_df['week'].max().date()}")
+
+# Keep records from the point where Netflix began reporting weekly views
+# and runtime consistently.
+global_df = global_df[global_df["week"] >= "2023-06-18"].copy()
+
+print(f"Rows after date filter: {len(global_df):,}")
+print(
+    f"Filtered date range: "
+    f"{global_df['week'].min().date()} to {global_df['week'].max().date()}"
+)
