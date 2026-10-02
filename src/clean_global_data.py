@@ -46,3 +46,10 @@ print("\nCleaned columns:")
 print(global_df.columns.tolist())
 
 print(f"Cleaned rows: {len(global_df):,}")
+
+# Validate the cleaned dataset.
+print("\n=== CLEANED DATA VALIDATION ===")
+print(f"Duplicate rows: {global_df.duplicated().sum():,}")
+
+print("\nMissing values by column:")
+print(global_df.isna().sum())
