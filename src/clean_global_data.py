@@ -53,3 +53,9 @@ print(f"Duplicate rows: {global_df.duplicated().sum():,}")
 
 print("\nMissing values by column:")
 print(global_df.isna().sum())
+
+# Save cleaned global data
+output_path = "data/processed/global_clean.csv"
+global_df.to_csv(output_path, index=False)
+
+print(f"\nSaved cleaned data to {output_path}")

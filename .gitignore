@@ -1,5 +1,5 @@
-# Raw Netflix data
-data/raw/
+# Data files
+data/
 
 # Python generated files
 __pycache__/
