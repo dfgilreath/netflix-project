@@ -1,8 +1,8 @@
-Netflix Cultural Impact
+**Netflix Cultural Impact**
 
 An analytics project exploring the relationship between Netflix viewing popularity and broader public interest.
 
-Research Question
+**Research Question**
 
 When a title becomes popular on Netflix, does broader public interest move with it?
 
@@ -10,7 +10,7 @@ The project uses Netflix Top 10 viewing data as the primary signal of streaming 
 
 The project is being developed in phases, beginning with a focused analysis of Netflix's global Top 10 data before adding geographic and external public-interest signals.
 
-Project Phases
+**Project Phases**
 Phase 1 — Netflix Popularity Explorer
 
 The first dashboard focuses exclusively on Netflix Global Top 10 data.
@@ -29,7 +29,7 @@ Case Studies: Use the broader framework to investigate titles or events that sho
 
 External data is intentionally being added after the Netflix analysis rather than selecting case studies in advance.
 
-Data
+**Data**
 
 The project uses Netflix's publicly available Top 10 datasets:
 
@@ -56,7 +56,7 @@ cumulative_weeks_in_top_10
 
 The cleaned global data begins on June 18, 2023, when Netflix's weekly views and runtime fields become consistently available.
 
-Analytical Datasets
+**Analytical Datasets**
 
 The Python pipeline currently produces two main analytical datasets:
 
@@ -90,7 +90,7 @@ TV (Non-English)
 
 The category selection will affect all dashboard components.
 
-KPI Metrics
+**KPI Metrics**
 
 The initial KPI cards are:
 
@@ -193,7 +193,7 @@ Git / GitHub
 
 Additional tools and data sources will be added as the project develops.
 
-Current Progress
+**Current Progress**
 
 ~Load Netflix Top 10 global data with Python~
 
