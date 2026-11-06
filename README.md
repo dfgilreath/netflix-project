@@ -215,7 +215,7 @@ Additional tools and data sources will be added as the project develops.
 
 ~Define Phase 1 dashboard~
 
-Explore metric distributions
+~Explore metric distributions~
 
 Build Phase 1 dashboard
 
