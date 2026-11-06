@@ -13,6 +13,10 @@ The project is being developed in phases, beginning with a focused analysis of N
 **Project Phases**
 Phase 1 — Netflix Popularity Explorer
 
+## Dashboard Preview
+
+![Netflix Popularity Explorer](screenshots/dashboard_wip.png)
+
 The first dashboard focuses exclusively on Netflix Global Top 10 data.
 
 The goal is to understand:
